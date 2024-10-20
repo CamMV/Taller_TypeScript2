@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Taller Type 2 -->
+    <!--Johan Camilo Murcia Valencia-->
+    <!--202317418-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller TypeScript 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        .h3 {
+            text-align: center;
+            background-color: rgb(41, 41, 186);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-8">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="h3 p-3">Series</div>
+                        <table class="table">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Channel</th>
+                                    <th>Seasons</th>
+                                </tr>
+                            </thead>
+                            <tbody id="series">
+                            </tbody>
+                        </table>
+                        <div class="row justify-content-end">
+                            <h5 class="col-4"><strong>Average seasons:</strong></h5>
+                            <h5 class="col-4" id="promedio"><strong></strong></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" id="detailsCard" style="display: none;">
+                    <img id="detailsImage" class="card-img-top" src="" alt="Series Image">
+                    <div class="card-body">
+                        <h5 class="card-title" id="detailsTitle"></h5>
+                        <p class="card-text" id="detailsDescription"></p>
+                        <a href="#" class="btn btn-primary" id="detailsLink" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./scripts/main.js"></script>
+    <script type="module" src="./scripts/serie.js"></script>
+    <script type="module" src="./scripts/data.js"></script>
+</body>
+</html> 
